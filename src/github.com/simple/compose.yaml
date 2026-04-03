@@ -1,0 +1,38 @@
+networks:
+  net:
+    ipam:
+      config:
+        - subnet: "10.0.0.0/24"
+
+services:
+  leader:
+    build:
+      context: ../
+      dockerfile: ./simple/Dockerfile
+    image: simple
+    networks:
+      net:  
+        ipv4_address: "10.0.0.3"
+    command: ["--id" , "0",  "--nodes", "10.0.0.3,10.0.0.4,10.0.0.5,10.0.0.6", "--roles", "2,1,1,0", "--clusters", "0,0,0,0" ]
+  follower1:
+    depends_on:
+      - leader
+    image: simple
+    networks:
+        net:  
+          ipv4_address: "10.0.0.4"
+    command: ["--id" , "1",  "--nodes", "10.0.0.3,10.0.0.4,10.0.0.5,10.0.0.6", "--roles", "2,1,1,0", "--clusters", "0,0,0,0" ]
+
+  follower2:
+    depends_on:
+      - leader
+    image: simple
+    networks:
+        net:  
+          ipv4_address: "10.0.0.4"
+    command: ["--id" , "2",  "--nodes", "10.0.0.3,10.0.0.4,10.0.0.5,10.0.0.6", "--roles", "2,1,1,0", "--clusters", "0,0,0,0" ]
+
+    
+    
+
+

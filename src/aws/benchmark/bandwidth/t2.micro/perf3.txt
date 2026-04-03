@@ -1,0 +1,19 @@
+Connecting to host 12.0.0.143, port 5201
+[  4] local 12.0.0.144 port 35886 connected to 12.0.0.143 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   138 MBytes  1.16 Gbits/sec    8   1022 KBytes       
+[  4]   1.00-2.00   sec   121 MBytes  1.01 Gbits/sec    2    918 KBytes       
+[  4]   2.00-3.00   sec   121 MBytes  1.02 Gbits/sec    2    795 KBytes       
+[  4]   3.00-4.00   sec   121 MBytes  1.02 Gbits/sec    1   1.02 MBytes       
+[  4]   4.00-5.00   sec   121 MBytes  1.02 Gbits/sec    2    935 KBytes       
+[  4]   5.00-6.00   sec   121 MBytes  1.02 Gbits/sec    3    813 KBytes       
+[  4]   6.00-7.00   sec   121 MBytes  1.02 Gbits/sec    1   1.03 MBytes       
+[  4]   7.00-8.00   sec   121 MBytes  1.02 Gbits/sec    2    944 KBytes       
+[  4]   8.00-9.00   sec   121 MBytes  1.01 Gbits/sec    2    821 KBytes       
+[  4]   9.00-10.00  sec   121 MBytes  1.02 Gbits/sec    1   1.04 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  1.20 GBytes  1.03 Gbits/sec   24             sender
+[  4]   0.00-10.00  sec  1.20 GBytes  1.03 Gbits/sec                  receiver
+
+iperf Done.

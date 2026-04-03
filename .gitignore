@@ -1,0 +1,34 @@
+# Infrastructure and Keys
+src/aws/aws_ec2_key
+src/aws/aws_ec2_key.pub
+src/aws/infrastructure/spread-across-availability-zone/plan.txt
+src/aws/infrastructure/spread-across-availability-zone/destroy-plan.txt
+src/aws/infrastructure/spread-across-availability-zone/plan
+src/aws/infrastructure/spread-across-availability-zone/destroyplan
+
+# Environment and Data
+out
+archive
+.terraform
+.terraform*
+terraform.tfstate*
+*out*/
+diff.txt
+out.txt
+*.log
+*.err
+*.json
+cli
+*.prof
+command.txt
+__pycache__
+cpu.txt
+
+src/aws/infrastructure/one-availability-zone-using-partitions/destroyplan
+src/aws/infrastructure/one-availability-zone-using-partitions/plan
+
+.github
+cli
+!geobft.json
+!modubft.json
+*.zip
